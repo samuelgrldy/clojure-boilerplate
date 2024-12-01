@@ -22,6 +22,9 @@
                 db-mongo-content
                 db-mongo-universal
 
+                db-mongo
+                db-mongo-uri
+
                 db-mongo-port
                 db-mongo-quiet
                 db-mongo-debug]} (u/read-config-true-flat)
@@ -31,6 +34,8 @@
                   :uri-universal           db-mongo-uri-universal
                   :db-content              db-mongo-content
                   :db-universal            db-mongo-universal
+                  :db-mongo-uri           db-mongo-uri
+                  :db-mongo               db-mongo
                   :quiet                   db-mongo-quiet
                   :debug                   db-mongo-debug}
         openai-config {:openai-completion openai-completion-url

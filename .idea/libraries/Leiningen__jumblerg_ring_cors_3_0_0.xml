@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: jumblerg/ring-cors:3.0.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jumblerg/ring-cors/3.0.0/ring-cors-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

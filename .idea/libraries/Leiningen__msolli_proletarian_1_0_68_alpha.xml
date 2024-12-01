@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: msolli/proletarian:1.0.68-alpha">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/msolli/proletarian/1.0.68-alpha/proletarian-1.0.68-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

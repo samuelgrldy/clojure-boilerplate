@@ -121,13 +121,9 @@
                          :openai-key
                          :openai-completion-url
 
-                         :db-mongo-uri-content
-                         :db-mongo-uri-universal
-                         :db-mongo-uri-zenbrain
+                         :db-mongo-uri
 
-                         :db-mongo-content
-                         :db-mongo-universal
-                         :db-mongo-zenbrain
+                         :db-mongo
 
                          :db-mongo-port
                          :db-mongo-quiet

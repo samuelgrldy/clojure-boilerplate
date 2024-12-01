@@ -12,10 +12,9 @@
     (u/pres
       #_db-mongo-config
       (keys db-mongo-config))
-    (let [conn-content (mg/connect (assoc db-mongo-config :uri
-                                                          (:uri-content db-mongo-config)))
-          db-content (mg/get-db conn-content (:db-content db-mongo-config))
-
+    (let [conn-db (mg/connect (assoc db-mongo-config :uri
+                                                     (:db-mongo-uri db-mongo-config)))
+          db (mg/get-db conn-db (:db-mongo db-mongo-config))
 
           ;conn-universal (mg/connect (assoc db-mongo-config :uri
           ;                                   (:uri-universal db-mongo-config)))
@@ -25,8 +24,8 @@
           ;scheduler-running? (atom true)
           ]
       (u/info "Starting the database and the dbref")
-      (merge this {:conn-content            conn-content
-                   :db-content              db-content
+      (merge this {:conn-db      conn-db
+                   :db           db
                    ;:scheduler-running?      scheduler-running?
                    })))
   (stop [this]
