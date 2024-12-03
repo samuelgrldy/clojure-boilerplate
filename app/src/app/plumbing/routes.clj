@@ -2,7 +2,9 @@
   (:require [reitit.ring :as ring]
             [clj-http.client :as http]
             [app.commons.web :as web]
-            [app.utils :as u]))
+            [app.utils :as u]
+            [app.bp-test.routes :as test-routes]
+            ))
 
 (defn api-check
   "Helper function for testing api"
@@ -19,8 +21,7 @@
   ["/api"
    ["/v1"
     ["" {:get (partial api-check db)}]
-
-    ]])
+    (test-routes/test-routes db openai web/backware-pass)]])
 
 
 (defn create-routes
