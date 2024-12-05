@@ -29,10 +29,9 @@
                    ;:scheduler-running?      scheduler-running?
                    })))
   (stop [this]
-    (do (mg/disconnect (:conn-content this))
-        (mg/disconnect (:conn-universal this)))
+    (mg/disconnect (:conn-db this))
     (u/info "Database stopped")
-    (dissoc this :conn-content :conn-universal)
+    (dissoc this :conn-db :db)
     ;(reset! (:scheduler-running? this) false)
     ;(u/info "Scheduler stopped")
     ))
